@@ -144,7 +144,7 @@
   color: var(--text-h);
   border: 1px solid var(--border);
   border-radius: 0.85rem;
-  padding: 1rem 1.1rem;
+  padding: 1.4rem 1.6rem;
   text-align: left;
   position: relative;
 }
@@ -165,8 +165,9 @@
 
 .pf-layout {
   display: flex;
-  gap: 0.85rem;
+  gap: 1rem;
   align-items: flex-start;
+  margin-bottom: 0.5rem;
 }
 
 .pf-photo {
@@ -257,13 +258,13 @@
 
 @media (max-width: 560px) {
   .dialog-backdrop {
-    padding: 0.4rem;
+    padding: 0.5rem;
   }
 
   .player-dialog {
     width: 100%;
-    max-height: 96svh;
-    padding: 0.8rem 0.75rem;
+    max-height: 94svh;
+    padding: 1rem 1rem 1.2rem;
     border-radius: 0.65rem;
   }
 
@@ -282,5 +283,9 @@
   .vote-table {
     min-width: 640px;
     font-size: 0.9rem;
+  }
+
+  .player-dialog h2 {
+    font-size: 1.15rem;
   }
 }
