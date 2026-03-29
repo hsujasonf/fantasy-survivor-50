@@ -94,6 +94,9 @@ export default function PlayerDialog({
                 </span>
               </p>
               <p>Merge has not happened yet.</p>
+              {selectedContestant.advantage && (
+                <p className="advantage-info">Advantage: {selectedContestant.advantage}</p>
+              )}
             </div>
           </div>
         </div>

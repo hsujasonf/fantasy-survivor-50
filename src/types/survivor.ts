@@ -6,6 +6,7 @@ export type Contestant = {
   photo: string
   originalTribe: Tribe
   switchedTribe?: Tribe
+  advantage?: string
 }
 
 export type EpisodeVoteMap = Record<number, string>

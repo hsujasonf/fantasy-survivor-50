@@ -32,6 +32,7 @@ export const contestants: Contestant[] = [
     photo: colbyPhoto,
     originalTribe: 'Vatu',
     switchedTribe: 'Kalo',
+    advantage: 'Lost Vote',
   },
   {
     name: 'Stephenie LaGrossa Kendrick',
@@ -46,6 +47,7 @@ export const contestants: Contestant[] = [
     photo: ciriePhoto,
     originalTribe: 'Cila',
     switchedTribe: 'Cila',
+    advantage: 'Extra Vote',
   },
   {
     name: 'Ozzy Lusth',
@@ -53,6 +55,7 @@ export const contestants: Contestant[] = [
     photo: ozzyPhoto,
     originalTribe: 'Cila',
     switchedTribe: 'Vatu',
+    advantage: 'Boomerang Idol',
   },
   {
     name: 'Benjamin "Coach" Wade',
@@ -67,6 +70,7 @@ export const contestants: Contestant[] = [
     photo: aubryPhoto,
     originalTribe: 'Vatu',
     switchedTribe: 'Kalo',
+    advantage: 'Boomerang Idol',
   },
   {
     name: 'Chrissy Hofbeck',
@@ -184,5 +188,6 @@ export const contestants: Contestant[] = [
     photo: rizoPhoto,
     originalTribe: 'Vatu',
     switchedTribe: 'Cila',
+    advantage: 'Boomerang Idol',
   },
 ]

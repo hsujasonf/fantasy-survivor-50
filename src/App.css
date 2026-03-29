@@ -138,6 +138,7 @@
 
 .player-dialog {
   width: min(920px, 100%);
+  max-width: calc(100vw - 1rem);
   max-height: min(88vh, 760px);
   overflow: auto;
   background: var(--bg);
@@ -147,6 +148,7 @@
   padding: 1.4rem 1.6rem;
   text-align: left;
   position: relative;
+  box-sizing: border-box;
 }
 
 .player-dialog h2 {
@@ -183,6 +185,11 @@
   font-size: 1rem;
 }
 
+.advantage-info {
+  font-weight: 600;
+  color: #e8c840;
+}
+
 .vote-table {
   width: 100%;
   border-collapse: collapse;
@@ -212,6 +219,8 @@
 
 .vote-table th {
   background: var(--social-bg);
+  white-space: nowrap;
+  font-size: 0.88rem;
 }
 
 .vote-table-wrap {
@@ -258,13 +267,13 @@
 
 @media (max-width: 560px) {
   .dialog-backdrop {
-    padding: 0.5rem;
+    padding: 0.35rem;
   }
 
   .player-dialog {
     width: 100%;
     max-height: 94svh;
-    padding: 1rem 1rem 1.2rem;
+    padding: 0.75rem 0.6rem 1rem;
     border-radius: 0.65rem;
   }
 
@@ -276,16 +285,52 @@
     width: min(220px, 100%);
   }
 
+  .pf-details p {
+    font-size: 0.85rem;
+  }
+
   .contestant-card h3 {
     font-size: 0.95rem;
   }
 
   .vote-table {
-    min-width: 640px;
-    font-size: 0.9rem;
+    min-width: 0;
+    width: 100%;
+    font-size: 0.62rem;
+    table-layout: fixed;
+  }
+
+  .vote-table th,
+  .vote-table td {
+    padding: 0.2rem 0.18rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .vote-table th {
+    font-size: 0.6rem;
+    white-space: normal;
+  }
+
+  .vote-table-wrap {
+    overflow-x: visible;
+  }
+
+  .tribe-pill {
+    min-width: 0;
+    font-size: 0.58rem;
+    padding: 0.05rem 0.2rem;
+  }
+
+  .correct-vote {
+    font-size: 0.7rem;
   }
 
   .player-dialog h2 {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+  }
+
+  .player-status {
+    font-size: 0.78rem;
   }
 }
