@@ -30,10 +30,12 @@ export default function PlayerDialog({
     eliminatedByEpisode,
   )
   const statusLabel = getPlayerStatusLabel(selectedContestant.name, eliminatedByEpisode)
-  const dualTribalEpisodes = new Set([7])
-  const eliminatedPlayerByEpisode = Object.fromEntries(
-    Object.entries(eliminatedByEpisode).map(([name, episode]) => [episode, name]),
-  ) as Record<number, string>
+  const dualTribalEpisodes = new Set([5])
+  const eliminatedPlayersByEpisode: Record<number, string[]> = {}
+  for (const [name, episode] of Object.entries(eliminatedByEpisode)) {
+    if (!eliminatedPlayersByEpisode[episode]) eliminatedPlayersByEpisode[episode] = []
+    eliminatedPlayersByEpisode[episode].push(name)
+  }
   const voteNameAliases: Record<string, string> = {
     Jenna: 'Jenna Lewis-Dougherty',
     Kyle: 'Kyle Fraser',
@@ -157,8 +159,19 @@ export default function PlayerDialog({
                       </td>
                       <td>{vote ?? 'No tribal'}</td>
                       <td className="correct-vote-cell">
-                        {vote ? (
-                          toCanonicalName(vote) === eliminatedPlayerByEpisode[episode] ? (
+                        {vote ? (() => {
+                          const eliminated = (eliminatedPlayersByEpisode[episode] ?? [])
+                            .filter((n) => n !== 'Kyle Fraser')
+                          let target: string | undefined
+                          if (dualTribalEpisodes.has(episode)) {
+                            target = eliminated.find((n) => {
+                              const c = contestants.find((ct) => ct.name === n)
+                              return c && getTribeForEpisode(c, episode) === tribe
+                            })
+                          } else {
+                            target = eliminated[0]
+                          }
+                          return toCanonicalName(vote) === target ? (
                             <span className="correct-vote yes" aria-label="Correct vote">
                               ✅
                             </span>
@@ -167,7 +180,7 @@ export default function PlayerDialog({
                               ❌
                             </span>
                           )
-                        ) : (
+                        })() : (
                           ''
                         )}
                       </td>
