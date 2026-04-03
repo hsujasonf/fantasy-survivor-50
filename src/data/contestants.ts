@@ -55,7 +55,7 @@ export const contestants: Contestant[] = [
     photo: ozzyPhoto,
     originalTribe: 'Cila',
     switchedTribe: 'Vatu',
-    advantage: 'Boomerang Idol',
+    advantage: 'Immunity Idol',
   },
   {
     name: 'Benjamin "Coach" Wade',
@@ -188,6 +188,6 @@ export const contestants: Contestant[] = [
     photo: rizoPhoto,
     originalTribe: 'Vatu',
     switchedTribe: 'Cila',
-    advantage: 'Boomerang Idol',
+    advantage: 'Immunity Idol',
   },
 ]

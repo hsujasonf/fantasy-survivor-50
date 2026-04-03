@@ -1,4 +1,5 @@
 import type { Contestant, EpisodeVoteMap } from '../types/survivor'
+import { episodeGroups } from '../data/gameData'
 import {
   getPlayerStatusLabel,
   getTribeForEpisode,
@@ -49,6 +50,10 @@ export default function PlayerDialog({
     Ozzy: 'Ozzy Lusth',
     Emily: 'Emily Flippen',
     Stephenie: 'Stephenie LaGrossa Kendrick',
+    Kamilla: 'Kamilla Karthigesu',
+    Genevieve: 'Genevieve Mushaluk',
+    Colby: 'Colby Donaldson',
+    Chrissy: 'Chrissy Hofbeck',
   }
 
   const toCanonicalName = (vote: string | undefined) => {
@@ -95,7 +100,10 @@ export default function PlayerDialog({
                   {selectedContestant.switchedTribe ?? selectedContestant.originalTribe}
                 </span>
               </p>
-              <p>Merge has not happened yet.</p>
+              <p>
+                Episode 6 merge tribe:{' '}
+                <span className="tribe-pill tribe-manulevu">Manulevu</span>
+              </p>
               {selectedContestant.advantage && (
                 <p className="advantage-info">Advantage: {selectedContestant.advantage}</p>
               )}
@@ -120,50 +128,81 @@ export default function PlayerDialog({
                 {visibleEpisodes.map((episode) => {
                   const tribe = getTribeForEpisode(selectedContestant, episode)
                   const vote = selectedVotes[episode]
+                  const isExiled = vote === 'Exiled'
+
                   const tribeMates = contestants.filter(
-                    (contestant) =>
-                      contestant.name !== selectedContestant.name &&
-                      getTribeForEpisode(contestant, episode) === tribe &&
-                      isActiveInEpisode(contestant.name, episode, eliminatedByEpisode),
+                    (c) =>
+                      c.name !== selectedContestant.name &&
+                      getTribeForEpisode(c, episode) === tribe &&
+                      isActiveInEpisode(c.name, episode, eliminatedByEpisode),
                   )
                   const activePlayers = contestants.filter(
-                    (contestant) =>
-                      contestant.name !== selectedContestant.name &&
-                      isActiveInEpisode(contestant.name, episode, eliminatedByEpisode),
+                    (c) =>
+                      c.name !== selectedContestant.name &&
+                      isActiveInEpisode(c.name, episode, eliminatedByEpisode),
                   )
-                  const votedWithPool = dualTribalEpisodes.has(episode) ? tribeMates : activePlayers
+
+                  const groups = episodeGroups[episode]
+                  const playerGroup = groups?.find((g) => g.includes(selectedContestant.name))
+                  const groupMembers = playerGroup
+                    ? contestants.filter(
+                        (c) => c.name !== selectedContestant.name && playerGroup.includes(c.name),
+                      )
+                    : []
+
+                  let comparisonPool: Contestant[]
+                  let differencePool: Contestant[]
+                  if (groups) {
+                    comparisonPool = groupMembers
+                    differencePool = groupMembers
+                  } else if (dualTribalEpisodes.has(episode)) {
+                    comparisonPool = tribeMates
+                    differencePool = tribeMates
+                  } else {
+                    comparisonPool = activePlayers
+                    differencePool = tribeMates
+                  }
 
                   let votedWith = 'No tribal'
                   let didNotVoteWith = 'No tribal'
 
-                  if (vote) {
-                    const matchedVotes = votedWithPool
-                      .filter((contestant) => voteHistory[contestant.name]?.[episode] === vote)
-                      .map((contestant) => contestant.name)
-                    const differentVotes = tribeMates
-                      .filter((contestant) => {
-                        const tribeMateVote = voteHistory[contestant.name]?.[episode]
-                        return Boolean(tribeMateVote) && tribeMateVote !== vote
+                  if (isExiled) {
+                    votedWith = ''
+                    didNotVoteWith = ''
+                  } else if (vote) {
+                    const matchedVotes = comparisonPool
+                      .filter((c) => {
+                        const v = voteHistory[c.name]?.[episode]
+                        return v && v !== 'Exiled' && v === vote
                       })
-                      .map((contestant) => contestant.name)
+                      .map((c) => c.name)
+                    const differentVotes = differencePool
+                      .filter((c) => {
+                        const v = voteHistory[c.name]?.[episode]
+                        return v && v !== 'Exiled' && v !== vote
+                      })
+                      .map((c) => c.name)
 
                     votedWith = matchedVotes.length > 0 ? matchedVotes.join(', ') : 'None'
                     didNotVoteWith = differentVotes.length > 0 ? differentVotes.join(', ') : 'None'
                   }
 
+                  let episodeLabel = String(episode)
+                  if (episode === 3) episodeLabel += ' (reshuffle)'
+                  if (episode === 6) episodeLabel += ' (merge)'
+
                   return (
                     <tr key={episode}>
-                      <td>
-                        {episode}
-                        {episode === 3 ? ' (reshuffle)' : ''}
-                      </td>
+                      <td>{episodeLabel}</td>
                       <td>{vote ?? 'No tribal'}</td>
                       <td className="correct-vote-cell">
-                        {vote ? (() => {
+                        {vote && !isExiled ? (() => {
                           const eliminated = (eliminatedPlayersByEpisode[episode] ?? [])
                             .filter((n) => n !== 'Kyle Fraser')
                           let target: string | undefined
-                          if (dualTribalEpisodes.has(episode)) {
+                          if (groups) {
+                            target = eliminated.find((n) => playerGroup?.includes(n))
+                          } else if (dualTribalEpisodes.has(episode)) {
                             target = eliminated.find((n) => {
                               const c = contestants.find((ct) => ct.name === n)
                               return c && getTribeForEpisode(c, episode) === tribe

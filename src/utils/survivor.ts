@@ -1,6 +1,9 @@
 import type { Contestant } from '../types/survivor'
 
 export function getTribeForEpisode(contestant: Contestant, episode: number) {
+  if (episode >= 6) {
+    return 'Manulevu' as const
+  }
   if (episode >= 3) {
     return contestant.switchedTribe ?? contestant.originalTribe
   }

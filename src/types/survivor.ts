@@ -1,4 +1,4 @@
-export type Tribe = 'Cila' | 'Vatu' | 'Kalo'
+export type Tribe = 'Cila' | 'Vatu' | 'Kalo' | 'Manulevu'
 
 export type Contestant = {
   name: string
