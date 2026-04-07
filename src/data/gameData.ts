@@ -66,4 +66,11 @@ export const episodeGroups: Record<number, string[][]> = {
   ],
 }
 
+export const dualTribalEpisodes = new Set([5])
+
+export const episodeLabels: Record<number, string> = {
+  3: '3 (reshuffle)',
+  6: '6 (merge)',
+}
+
 export const teamOrder = ['Hsu', 'Monica', 'Charlie', 'Fanny', 'Kelsey', 'Alex', 'Kelly', 'Audrey']

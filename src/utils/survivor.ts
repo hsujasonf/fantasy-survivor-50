@@ -1,4 +1,4 @@
-import type { Contestant } from '../types/survivor'
+import type { Contestant, Tribe } from '../types/survivor'
 
 export function getTribeForEpisode(contestant: Contestant, episode: number) {
   if (episode >= 6) {
@@ -42,4 +42,40 @@ export function getVisibleEpisodes(
 ) {
   const eliminatedEpisode = eliminatedByEpisode[contestantName]
   return trackedEpisodes.filter((episode) => !eliminatedEpisode || episode <= eliminatedEpisode)
+}
+
+export function buildEliminatedByEpisodeMap(
+  eliminatedByEpisode: Record<string, number>,
+): Record<number, string[]> {
+  const map: Record<number, string[]> = {}
+  for (const [name, episode] of Object.entries(eliminatedByEpisode)) {
+    if (!map[episode]) map[episode] = []
+    map[episode].push(name)
+  }
+  return map
+}
+
+export function getCorrectVoteTarget(
+  episode: number,
+  tribe: Tribe,
+  playerName: string,
+  eliminatedPlayersByEpisode: Record<number, string[]>,
+  episodeGroups: Record<number, string[][]>,
+  dualTribalEpisodes: Set<number>,
+  contestants: Contestant[],
+): string | undefined {
+  const eliminated = (eliminatedPlayersByEpisode[episode] ?? [])
+    .filter((n) => n !== 'Kyle Fraser')
+  const groups = episodeGroups[episode]
+  if (groups) {
+    const group = groups.find((g) => g.includes(playerName))
+    return eliminated.find((n) => group?.includes(n))
+  }
+  if (dualTribalEpisodes.has(episode)) {
+    return eliminated.find((n) => {
+      const c = contestants.find((ct) => ct.name === n)
+      return c && getTribeForEpisode(c, episode) === tribe
+    })
+  }
+  return eliminated[0]
 }
