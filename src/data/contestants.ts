@@ -60,4 +60,7 @@ export const contestants: Contestant[] = rawContestants.map((c) => ({
   originalTribe: c.originalTribe as Tribe,
   switchedTribe: c.switchedTribe as Tribe | undefined,
   advantage: c.advantage,
+  age: c.age,
+  hometown: c.hometown,
+  seasons: c.seasons,
 }))

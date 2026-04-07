@@ -85,18 +85,19 @@ export default function VoteTable({
               votedWith = ''
               didNotVoteWith = ''
             } else if (vote) {
+              const firstName = (n: string) => n.split(' ')[0]
               const matchedVotes = comparisonPool
                 .filter((c) => {
                   const v = voteHistory[c.name]?.[episode]
                   return v && v !== 'Exiled' && v === vote
                 })
-                .map((c) => c.name)
+                .map((c) => firstName(c.name))
               const differentVotes = differencePool
                 .filter((c) => {
                   const v = voteHistory[c.name]?.[episode]
                   return v && v !== 'Exiled' && v !== vote
                 })
-                .map((c) => c.name)
+                .map((c) => firstName(c.name))
 
               votedWith = matchedVotes.length > 0 ? matchedVotes.join(', ') : 'None'
               didNotVoteWith = differentVotes.length > 0 ? differentVotes.join(', ') : 'None'

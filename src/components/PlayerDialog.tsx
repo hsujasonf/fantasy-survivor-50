@@ -39,13 +39,8 @@ export default function PlayerDialog({
         <button type="button" className="dialog-close" onClick={onClose} aria-label="Close details">
           x
         </button>
-        <h2>
-          {selectedContestant.name}
-          {statusLabel ? <span className="player-status"> - {statusLabel}</span> : null}
-        </h2>
-
         <div className="dialog-block">
-          <TribeInfo contestant={selectedContestant} />
+          <TribeInfo contestant={selectedContestant} statusLabel={statusLabel} />
         </div>
 
         <div className="dialog-block">

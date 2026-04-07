@@ -7,6 +7,9 @@ export type Contestant = {
   originalTribe: Tribe
   switchedTribe?: Tribe
   advantage?: string
+  age: number
+  hometown: string
+  seasons: string[]
 }
 
 export type EpisodeVoteMap = Record<number, string>
