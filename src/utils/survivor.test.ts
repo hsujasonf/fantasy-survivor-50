@@ -15,6 +15,9 @@ const makeContestant = (
   draftedBy: 'Test',
   photo: '',
   originalTribe: 'Cila',
+  age: 30,
+  hometown: 'Test City',
+  seasons: ['Test Season'],
   ...overrides,
 })
 
