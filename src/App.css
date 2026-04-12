@@ -8,8 +8,206 @@
 
 .header-logo {
   display: block;
-  width: min(360px, 92vw);
-  margin: 0 auto 0.5rem;
+  width: min(200px, 60vw);
+  margin: 0 auto 0.75rem;
+}
+
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font: inherit;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.tab-btn:hover {
+  color: #fff;
+}
+
+.tab-btn.active {
+  color: #fff;
+  border-bottom-color: #8fd0ff;
+}
+
+/* Timeline */
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.55rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(143, 208, 255, 0.3);
+}
+
+.tl-episode {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.tl-dot {
+  position: absolute;
+  left: -1.7rem;
+  top: 1.1rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #8fd0ff;
+  border: 2px solid rgba(12, 18, 26, 0.8);
+  z-index: 1;
+}
+
+.tl-card {
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+  background: rgba(12, 18, 26, 0.75);
+  padding: 1rem 1.2rem;
+  text-align: left;
+}
+
+.tl-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.15rem;
+}
+
+.tl-ep-num {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #8fd0ff;
+}
+
+.tl-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(245, 212, 66, 0.25);
+  color: #f5d442;
+}
+
+.tl-title {
+  margin: 0 0 0.15rem;
+  font-size: 1.15rem;
+  color: #f3f6ff;
+  font-style: italic;
+}
+
+.tl-date {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 0.6rem;
+}
+
+.tl-events {
+  margin: 0 0 0.75rem;
+  padding-left: 1.1rem;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.55;
+}
+
+.tl-events li {
+  margin-bottom: 0.25rem;
+}
+
+.tl-eliminations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 0.7rem;
+}
+
+.tl-elim {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.tl-elim-photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff3b3b;
+}
+
+.tl-elim-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.tl-elim-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #f3f6ff;
+}
+
+.tl-elim-detail {
+  font-size: 0.78rem;
+  color: #ff3b3b;
+  font-weight: 500;
+}
+
+@media (max-width: 560px) {
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .tl-dot {
+    left: -1.2rem;
+    width: 10px;
+    height: 10px;
+  }
+
+  .timeline::before {
+    left: 0.35rem;
+  }
+
+  .tl-card {
+    padding: 0.75rem 0.8rem;
+  }
+
+  .tl-title {
+    font-size: 1rem;
+  }
+
+  .tl-events {
+    font-size: 0.8rem;
+  }
+
+  .tl-elim-photo {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .page-header p {
