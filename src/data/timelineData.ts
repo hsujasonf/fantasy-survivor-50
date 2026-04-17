@@ -130,4 +130,23 @@ export const timelineEpisodes: TimelineEpisode[] = [
       { name: 'Dee Valladares', method: 'Voted Out', votes: '8-4-1' },
     ],
   },
+  {
+    episode: 8,
+    title: 'Double The Fun, Double The Demise',
+    airDate: 'April 15, 2026',
+    days: '15–16',
+    label: 'Pair Vote',
+    events: [
+      'Castaways divided into pairs: Coach & Chrissy, Rizo & Emily, Christian & Jonathan, Joe & Tiffany, Aubry & Rick, Ozzy & Stephenie',
+      'Cirie left without a partner and sent to Exile Island',
+      'Joe & Tiffany win the pair immunity challenge plus a spaghetti and wine reward',
+      'Cirie wins an Exile challenge to return and vote at tribal council',
+      'One pair to be voted out together — a Survivor first',
+      "Coach plays Shot in the Dark (Not Safe)",
+    ],
+    eliminated: [
+      { name: 'Benjamin "Coach" Wade', method: 'Voted Out (Pair)', votes: '10-1-1' },
+      { name: 'Chrissy Hofbeck', method: 'Voted Out (Pair)', votes: '10-1-1' },
+    ],
+  },
 ]

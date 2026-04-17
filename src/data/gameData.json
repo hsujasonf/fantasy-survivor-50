@@ -2,28 +2,28 @@
   "voteHistory": {
     "Jenna Lewis-Dougherty": { "1": "Cirie" },
     "Colby Donaldson": { "6": "None" },
-    "Stephenie LaGrossa Kendrick": { "3": "Angelina", "4": "Mike", "5": "Angelina", "6": "Kamilla", "7": "Tiffany" },
-    "Cirie Fields": { "1": "Jenna", "2": "Savannah", "5": "Charlie", "6": "Colby", "7": "Dee" },
-    "Ozzy Lusth": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Angelina", "5": "Angelina", "6": "Exiled", "7": "Tiffany" },
-    "Benjamin \"Coach\" Wade": { "6": "Colby", "7": "Tiffany" },
-    "Aubry Bracco": { "6": "Genevieve", "7": "Dee" },
-    "Chrissy Hofbeck": { "6": "Kamilla", "7": "Dee" },
-    "Christian Hubicki": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Genevieve", "7": "Dee" },
+    "Stephenie LaGrossa Kendrick": { "3": "Angelina", "4": "Mike", "5": "Angelina", "6": "Kamilla", "7": "Tiffany", "8": "Coach & Chrissy" },
+    "Cirie Fields": { "1": "Jenna", "2": "Savannah", "5": "Charlie", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy" },
+    "Ozzy Lusth": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Angelina", "5": "Angelina", "6": "Exiled", "7": "Tiffany", "8": "Coach & Chrissy" },
+    "Benjamin \"Coach\" Wade": { "6": "Colby", "7": "Tiffany", "8": "None" },
+    "Aubry Bracco": { "6": "Genevieve", "7": "Dee", "8": "Aubry & Rick" },
+    "Chrissy Hofbeck": { "6": "Kamilla", "7": "Dee", "8": "Emily & Rizo" },
+    "Christian Hubicki": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy" },
     "Angelina Keeley": { "3": "Q", "4": "Emily", "5": "Stephenie" },
     "Mike White": { "3": "Q", "4": "Emily" },
-    "Rick Devens": { "1": "Jenna", "2": "Savannah", "5": "Rizo", "6": "Genevieve", "7": "Dee" },
-    "Jonathan Young": { "5": "Rizo", "6": "Kamilla", "7": "Dee" },
-    "Emily Flippen": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Colby", "7": "Dee" },
+    "Rick Devens": { "1": "Jenna", "2": "Savannah", "5": "Rizo", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy" },
+    "Jonathan Young": { "5": "Rizo", "6": "Kamilla", "7": "Dee", "8": "Coach & Chrissy" },
+    "Emily Flippen": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy" },
     "Dee Valladares": { "5": "Charlie", "6": "Colby", "7": "None" },
     "Quintavius \"Q\" Burdette": { "3": "None" },
     "Charlie Davis": { "5": "Rizo" },
-    "Tiffany Ervin": { "6": "Chrissy", "7": "Coach" },
+    "Tiffany Ervin": { "6": "Chrissy", "7": "Coach", "8": "Coach & Chrissy" },
     "Genevieve Mushaluk": { "6": "None" },
     "Kyle Fraser": {},
-    "Joe Hunter": { "1": "Jenna", "2": "Savannah", "6": "Genevieve", "7": "Tiffany" },
+    "Joe Hunter": { "1": "Jenna", "2": "Savannah", "6": "Genevieve", "7": "Tiffany", "8": "Coach & Chrissy" },
     "Kamilla Karthigesu": { "5": "Charlie", "6": "Chrissy" },
     "Savannah Louie": { "1": "Jenna", "2": "Ozzy" },
-    "Rizo Velovic": { "5": "Charlie", "6": "Exiled", "7": "Dee" }
+    "Rizo Velovic": { "5": "Charlie", "6": "Exiled", "7": "Dee", "8": "Coach & Chrissy" }
   },
   "votedOff": [
     "Jenna Lewis-Dougherty",
@@ -36,9 +36,11 @@
     "Kamilla Karthigesu",
     "Genevieve Mushaluk",
     "Colby Donaldson",
-    "Dee Valladares"
+    "Dee Valladares",
+    "Benjamin \"Coach\" Wade",
+    "Chrissy Hofbeck"
   ],
-  "trackedEpisodes": [1, 2, 3, 4, 5, 6, 7],
+  "trackedEpisodes": [1, 2, 3, 4, 5, 6, 7, 8],
   "eliminatedByEpisode": {
     "Jenna Lewis-Dougherty": 1,
     "Kyle Fraser": 1,
@@ -50,7 +52,9 @@
     "Kamilla Karthigesu": 6,
     "Genevieve Mushaluk": 6,
     "Colby Donaldson": 6,
-    "Dee Valladares": 7
+    "Dee Valladares": 7,
+    "Benjamin \"Coach\" Wade": 8,
+    "Chrissy Hofbeck": 8
   },
   "episodeGroups": {
     "6": [
