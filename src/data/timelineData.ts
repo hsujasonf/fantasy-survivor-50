@@ -145,7 +145,7 @@ export const timelineEpisodes: TimelineEpisode[] = [
       "Coach plays Shot in the Dark (Not Safe)",
     ],
     eliminated: [
-      { name: 'Benjamin "Coach" Wade', method: 'Voted Out (Pair)', votes: '10-1-1' },
+      { name: 'Coach Wade', method: 'Voted Out (Pair)', votes: '10-1-1' },
       { name: 'Chrissy Hofbeck', method: 'Voted Out (Pair)', votes: '10-1-1' },
     ],
   },

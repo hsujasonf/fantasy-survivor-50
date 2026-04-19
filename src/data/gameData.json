@@ -5,14 +5,14 @@
     "Stephenie LaGrossa Kendrick": { "3": "Angelina", "4": "Mike", "5": "Angelina", "6": "Kamilla", "7": "Tiffany", "8": "Coach & Chrissy" },
     "Cirie Fields": { "1": "Jenna", "2": "Savannah", "5": "Charlie", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy" },
     "Ozzy Lusth": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Angelina", "5": "Angelina", "6": "Exiled", "7": "Tiffany", "8": "Coach & Chrissy" },
-    "Benjamin \"Coach\" Wade": { "6": "Colby", "7": "Tiffany", "8": "None" },
-    "Aubry Bracco": { "6": "Genevieve", "7": "Dee", "8": "Aubry & Rick" },
+    "Coach Wade": { "6": "Colby", "7": "Tiffany", "8": "None" },
+    "Aubry Bracco": { "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy" },
     "Chrissy Hofbeck": { "6": "Kamilla", "7": "Dee", "8": "Emily & Rizo" },
     "Christian Hubicki": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy" },
     "Angelina Keeley": { "3": "Q", "4": "Emily", "5": "Stephenie" },
     "Mike White": { "3": "Q", "4": "Emily" },
     "Rick Devens": { "1": "Jenna", "2": "Savannah", "5": "Rizo", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy" },
-    "Jonathan Young": { "5": "Rizo", "6": "Kamilla", "7": "Dee", "8": "Coach & Chrissy" },
+    "Jonathan Young": { "5": "Rizo", "6": "Kamilla", "7": "Dee", "8": "Aubry & Rick" },
     "Emily Flippen": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy" },
     "Dee Valladares": { "5": "Charlie", "6": "Colby", "7": "None" },
     "Quintavius \"Q\" Burdette": { "3": "None" },
@@ -37,7 +37,7 @@
     "Genevieve Mushaluk",
     "Colby Donaldson",
     "Dee Valladares",
-    "Benjamin \"Coach\" Wade",
+    "Coach Wade",
     "Chrissy Hofbeck"
   ],
   "trackedEpisodes": [1, 2, 3, 4, 5, 6, 7, 8],
@@ -53,14 +53,14 @@
     "Genevieve Mushaluk": 6,
     "Colby Donaldson": 6,
     "Dee Valladares": 7,
-    "Benjamin \"Coach\" Wade": 8,
+    "Coach Wade": 8,
     "Chrissy Hofbeck": 8
   },
   "episodeGroups": {
     "6": [
       ["Chrissy Hofbeck", "Jonathan Young", "Stephenie LaGrossa Kendrick", "Tiffany Ervin", "Kamilla Karthigesu"],
       ["Aubry Bracco", "Christian Hubicki", "Joe Hunter", "Rick Devens", "Genevieve Mushaluk"],
-      ["Cirie Fields", "Benjamin \"Coach\" Wade", "Dee Valladares", "Emily Flippen", "Colby Donaldson"]
+      ["Cirie Fields", "Coach Wade", "Dee Valladares", "Emily Flippen", "Colby Donaldson"]
     ]
   },
   "dualTribalEpisodes": [5],
