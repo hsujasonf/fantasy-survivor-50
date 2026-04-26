@@ -149,4 +149,22 @@ export const timelineEpisodes: TimelineEpisode[] = [
       { name: 'Chrissy Hofbeck', method: 'Voted Out (Pair)', votes: '10-1-1' },
     ],
   },
+  {
+    episode: 9,
+    title: 'I Deserve All Of This',
+    airDate: 'April 22, 2026',
+    days: '16–18',
+    events: [
+      'Rick is criticized at camp for his fake idol theatrics from the prior tribal',
+      'Christian tries to reconcile with Jonathan, Joe, and Stephenie, but trust is gone',
+      'Christian pitches Cirie on targeting Ozzy; Cirie flips and rallies votes against Christian instead',
+      'Bucket-hold immunity challenge: Joe wins individual immunity',
+      'Four volunteers (Jonathan, Joe, Ozzy, Tiffany) outlast Jeff Probst to win a large bag of rice for the tribe',
+      'Joe sends Christian on a journey via rock-paper-scissors',
+      'Christian plays Shot in the Dark as a trust gesture, offering it to Jonathan',
+    ],
+    eliminated: [
+      { name: 'Christian Hubicki', method: 'Voted Out', votes: '6-3-2' },
+    ],
+  },
 ]

@@ -2,28 +2,28 @@
   "voteHistory": {
     "Jenna Lewis-Dougherty": { "1": "Cirie" },
     "Colby Donaldson": { "6": "None" },
-    "Stephenie LaGrossa Kendrick": { "3": "Angelina", "4": "Mike", "5": "Angelina", "6": "Kamilla", "7": "Tiffany", "8": "Coach & Chrissy" },
-    "Cirie Fields": { "1": "Jenna", "2": "Savannah", "5": "Charlie", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy" },
-    "Ozzy Lusth": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Angelina", "5": "Angelina", "6": "Exiled", "7": "Tiffany", "8": "Coach & Chrissy" },
+    "Stephenie LaGrossa Kendrick": { "3": "Angelina", "4": "Mike", "5": "Angelina", "6": "Kamilla", "7": "Tiffany", "8": "Coach & Chrissy", "9": "Rick" },
+    "Cirie Fields": { "1": "Jenna", "2": "Savannah", "5": "Charlie", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy", "9": "Christian" },
+    "Ozzy Lusth": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Angelina", "5": "Angelina", "6": "Exiled", "7": "Tiffany", "8": "Coach & Chrissy", "9": "Christian" },
     "Coach Wade": { "6": "Colby", "7": "Tiffany", "8": "None" },
-    "Aubry Bracco": { "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy" },
+    "Aubry Bracco": { "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy", "9": "Ozzy" },
     "Chrissy Hofbeck": { "6": "Kamilla", "7": "Dee", "8": "Emily & Rizo" },
-    "Christian Hubicki": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy" },
+    "Christian Hubicki": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy", "9": "Christian" },
     "Angelina Keeley": { "3": "Q", "4": "Emily", "5": "Stephenie" },
     "Mike White": { "3": "Q", "4": "Emily" },
-    "Rick Devens": { "1": "Jenna", "2": "Savannah", "5": "Rizo", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy" },
-    "Jonathan Young": { "5": "Rizo", "6": "Kamilla", "7": "Dee", "8": "Aubry & Rick" },
-    "Emily Flippen": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy" },
+    "Rick Devens": { "1": "Jenna", "2": "Savannah", "5": "Rizo", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy", "9": "Ozzy" },
+    "Jonathan Young": { "5": "Rizo", "6": "Kamilla", "7": "Dee", "8": "Aubry & Rick", "9": "Rick" },
+    "Emily Flippen": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy", "9": "Rick" },
     "Dee Valladares": { "5": "Charlie", "6": "Colby", "7": "None" },
     "Quintavius \"Q\" Burdette": { "3": "None" },
     "Charlie Davis": { "5": "Rizo" },
-    "Tiffany Ervin": { "6": "Chrissy", "7": "Coach", "8": "Coach & Chrissy" },
+    "Tiffany Ervin": { "6": "Chrissy", "7": "Coach", "8": "Coach & Chrissy", "9": "Christian" },
     "Genevieve Mushaluk": { "6": "None" },
     "Kyle Fraser": {},
-    "Joe Hunter": { "1": "Jenna", "2": "Savannah", "6": "Genevieve", "7": "Tiffany", "8": "Coach & Chrissy" },
+    "Joe Hunter": { "1": "Jenna", "2": "Savannah", "6": "Genevieve", "7": "Tiffany", "8": "Coach & Chrissy", "9": "Christian" },
     "Kamilla Karthigesu": { "5": "Charlie", "6": "Chrissy" },
     "Savannah Louie": { "1": "Jenna", "2": "Ozzy" },
-    "Rizo Velovic": { "5": "Charlie", "6": "Exiled", "7": "Dee", "8": "Coach & Chrissy" }
+    "Rizo Velovic": { "5": "Charlie", "6": "Exiled", "7": "Dee", "8": "Coach & Chrissy", "9": "Christian" }
   },
   "votedOff": [
     "Jenna Lewis-Dougherty",
@@ -38,9 +38,10 @@
     "Colby Donaldson",
     "Dee Valladares",
     "Coach Wade",
-    "Chrissy Hofbeck"
+    "Chrissy Hofbeck",
+    "Christian Hubicki"
   ],
-  "trackedEpisodes": [1, 2, 3, 4, 5, 6, 7, 8],
+  "trackedEpisodes": [1, 2, 3, 4, 5, 6, 7, 8, 9],
   "eliminatedByEpisode": {
     "Jenna Lewis-Dougherty": 1,
     "Kyle Fraser": 1,
@@ -54,7 +55,8 @@
     "Colby Donaldson": 6,
     "Dee Valladares": 7,
     "Coach Wade": 8,
-    "Chrissy Hofbeck": 8
+    "Chrissy Hofbeck": 8,
+    "Christian Hubicki": 9
   },
   "episodeGroups": {
     "6": [
