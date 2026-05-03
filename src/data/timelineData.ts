@@ -167,4 +167,21 @@ export const timelineEpisodes: TimelineEpisode[] = [
       { name: 'Christian Hubicki', method: 'Voted Out', votes: '6-3-2' },
     ],
   },
+  {
+    episode: 10,
+    title: 'A Side Dish of Chaos',
+    airDate: 'April 29, 2026',
+    days: '18–19',
+    events: [
+      'Rick reveals his fake idol to camp; Joe and Ozzy still target him',
+      'The Survivor Auction returns with themed item categories and mystery offerings',
+      "MrBeast appears at tribal council with the 'Super Beware Advantage' briefcase",
+      'Twist: a coin flip — heads = immunity + idol + $2M prize pool, tails = instant elimination',
+      "Rick volunteers, calls heads, and wins safety plus an idol",
+      "Stephenie plays her steal-a-vote on Rick, but Rick's immunity makes the votes against him moot",
+    ],
+    eliminated: [
+      { name: 'Stephenie LaGrossa Kendrick', method: 'Voted Out', votes: '8-2' },
+    ],
+  },
 ]
