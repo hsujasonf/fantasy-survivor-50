@@ -349,6 +349,10 @@
   box-sizing: border-box;
 }
 
+.player-dialog .dialog-block:last-child {
+  min-height: 520px;
+}
+
 .player-dialog h2 {
   margin: 0 0 0.4rem;
 }
@@ -662,5 +666,9 @@
 
   .player-status {
     font-size: 0.78rem;
+  }
+
+  .player-dialog .dialog-block:last-child {
+    min-height: 380px;
   }
 }
