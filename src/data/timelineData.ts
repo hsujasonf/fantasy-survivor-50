@@ -175,10 +175,11 @@ export const timelineEpisodes: TimelineEpisode[] = [
     events: [
       'Rick reveals his fake idol to camp; Joe and Ozzy still target him',
       'The Survivor Auction returns with themed item categories and mystery offerings',
+      'Tiffany wins individual immunity',
       "MrBeast appears at tribal council with the 'Super Beware Advantage' briefcase",
-      'Twist: a coin flip — heads = immunity + idol + $2M prize pool, tails = instant elimination',
-      "Rick volunteers, calls heads, and wins safety plus an idol",
-      "Stephenie plays her steal-a-vote on Rick, but Rick's immunity makes the votes against him moot",
+      'Twist: a coin flip — heads = a real idol + $2M prize pool, tails = instant elimination',
+      'Rick volunteers, calls heads, and wins a real idol which he plays for safety',
+      "Stephenie plays her steal-a-vote on Rick, but Rick's idol negates the votes against him",
     ],
     eliminated: [
       { name: 'Stephenie LaGrossa Kendrick', method: 'Voted Out', votes: '8-2' },

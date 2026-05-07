@@ -453,6 +453,134 @@
   background: #f5d442;
 }
 
+.pf-tabs {
+  display: flex;
+  gap: 0.25rem;
+  border-bottom: 1px solid var(--border);
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.pf-tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: rgba(255, 255, 255, 0.55);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+  margin-bottom: -1px;
+}
+
+.pf-tab:hover {
+  color: var(--text-h);
+}
+
+.pf-tab.active {
+  color: var(--text-h);
+  border-bottom-color: #8fd0ff;
+}
+
+.player-stats {
+  text-align: left;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.stat-card {
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+  background: rgba(17, 25, 35, 0.7);
+  padding: 0.85rem 1rem;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8fd0ff;
+  line-height: 1.1;
+}
+
+.stat-fraction {
+  font-size: 1.2rem;
+  color: rgba(143, 208, 255, 0.55);
+  font-weight: 500;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-h);
+  font-weight: 600;
+  margin-top: 0.2rem;
+  letter-spacing: 0.3px;
+}
+
+.stat-detail {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.25rem;
+}
+
+.stat-section-title {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  color: var(--text-h);
+}
+
+.vote-breakdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.4rem;
+}
+
+.vote-breakdown-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: rgba(17, 25, 35, 0.55);
+  font-size: 0.85rem;
+}
+
+.vb-ep {
+  font-weight: 600;
+  color: #8fd0ff;
+  min-width: 38px;
+}
+
+.vb-vote {
+  flex: 1;
+  color: var(--text-h);
+}
+
+.vb-mark {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 560px) {
+  .stat-value {
+    font-size: 1.6rem;
+  }
+  .pf-tab {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.85rem;
+  }
+}
+
 .dialog-close {
   position: absolute;
   top: 0.5rem;

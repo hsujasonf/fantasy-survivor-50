@@ -3,7 +3,7 @@
     "Jenna Lewis-Dougherty": { "1": "Cirie" },
     "Colby Donaldson": { "6": "None" },
     "Stephenie LaGrossa Kendrick": { "3": "Angelina", "4": "Mike", "5": "Angelina", "6": "Kamilla", "7": "Tiffany", "8": "Coach & Chrissy", "9": "Rick", "10": "Rick" },
-    "Cirie Fields": { "1": "Jenna", "2": "Savannah", "5": "Charlie", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy", "9": "Christian", "10": "Stephenie", "11": "Cirie" },
+    "Cirie Fields": { "1": "Jenna", "2": "Savannah", "5": "Charlie", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy", "9": "Christian", "10": "Stephenie", "11": "Emily" },
     "Ozzy Lusth": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Angelina", "5": "Angelina", "6": "Exiled", "7": "Tiffany", "8": "Coach & Chrissy", "9": "Christian", "10": "Stephenie", "11": "Rizo" },
     "Coach Wade": { "6": "Colby", "7": "Tiffany", "8": "None" },
     "Aubry Bracco": { "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy", "9": "Ozzy", "10": "Stephenie", "11": "Ozzy" },
@@ -11,7 +11,7 @@
     "Christian Hubicki": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy", "9": "Christian" },
     "Angelina Keeley": { "3": "Q", "4": "Emily", "5": "Stephenie" },
     "Mike White": { "3": "Q", "4": "Emily" },
-    "Rick Devens": { "1": "Jenna", "2": "Savannah", "5": "Rizo", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy", "9": "Ozzy", "10": "None", "11": "Emily" },
+    "Rick Devens": { "1": "Jenna", "2": "Savannah", "5": "Rizo", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy", "9": "Ozzy", "10": "None", "11": "Cirie" },
     "Jonathan Young": { "5": "Rizo", "6": "Kamilla", "7": "Dee", "8": "Aubry & Rick", "9": "Rick", "10": "Stephenie", "11": "Ozzy" },
     "Emily Flippen": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy", "9": "Rick", "10": "Stephenie", "11": "Cirie" },
     "Dee Valladares": { "5": "Charlie", "6": "Colby", "7": "None" },
@@ -80,5 +80,14 @@
     "3": "3 (reshuffle)",
     "6": "6 (merge)"
   },
-  "teamOrder": ["Hsu", "Monica", "Charlie", "Fanny", "Kelsey", "Alex", "Kelly", "Audrey"]
+  "teamOrder": ["Hsu", "Monica", "Charlie", "Fanny", "Kelsey", "Alex", "Kelly", "Audrey"],
+  "immunityWins": {
+    "Stephenie LaGrossa Kendrick": [6],
+    "Christian Hubicki": [6],
+    "Dee Valladares": [6],
+    "Ozzy Lusth": [7],
+    "Joe Hunter": [8, 9],
+    "Tiffany Ervin": [8, 10],
+    "Jonathan Young": [11]
+  }
 }

@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import type { Contestant, EpisodeVoteMap } from '../types/survivor'
 import { getPlayerStatusLabel, getVisibleEpisodes } from '../utils/survivor'
 import TribeInfo from './TribeInfo'
 import VoteTable from './VoteTable'
+import PlayerStats from './PlayerStats'
 
 type PlayerDialogProps = {
   selectedContestant: Contestant
@@ -12,6 +14,8 @@ type PlayerDialogProps = {
   onClose: () => void
 }
 
+type PfTab = 'votes' | 'stats'
+
 export default function PlayerDialog({
   selectedContestant,
   contestants,
@@ -20,6 +24,7 @@ export default function PlayerDialog({
   eliminatedByEpisode,
   onClose,
 }: PlayerDialogProps) {
+  const [activeTab, setActiveTab] = useState<PfTab>('votes')
   const statusLabel = getPlayerStatusLabel(selectedContestant.name, eliminatedByEpisode)
   const visibleEpisodes = getVisibleEpisodes(
     selectedContestant.name,
@@ -43,14 +48,40 @@ export default function PlayerDialog({
           <TribeInfo contestant={selectedContestant} statusLabel={statusLabel} />
         </div>
 
+        <nav className="pf-tabs">
+          <button
+            className={`pf-tab${activeTab === 'votes' ? ' active' : ''}`}
+            onClick={() => setActiveTab('votes')}
+          >
+            Voting Table
+          </button>
+          <button
+            className={`pf-tab${activeTab === 'stats' ? ' active' : ''}`}
+            onClick={() => setActiveTab('stats')}
+          >
+            Stats
+          </button>
+        </nav>
+
         <div className="dialog-block">
-          <VoteTable
-            contestant={selectedContestant}
-            contestants={contestants}
-            voteHistory={voteHistory}
-            visibleEpisodes={visibleEpisodes}
-            eliminatedByEpisode={eliminatedByEpisode}
-          />
+          {activeTab === 'votes' && (
+            <VoteTable
+              contestant={selectedContestant}
+              contestants={contestants}
+              voteHistory={voteHistory}
+              visibleEpisodes={visibleEpisodes}
+              eliminatedByEpisode={eliminatedByEpisode}
+            />
+          )}
+          {activeTab === 'stats' && (
+            <PlayerStats
+              contestant={selectedContestant}
+              contestants={contestants}
+              voteHistory={voteHistory}
+              visibleEpisodes={visibleEpisodes}
+              eliminatedByEpisode={eliminatedByEpisode}
+            />
+          )}
         </div>
       </section>
     </div>

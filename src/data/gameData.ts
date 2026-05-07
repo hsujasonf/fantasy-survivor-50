@@ -31,3 +31,5 @@ export const episodeLabels: Record<number, string> =
   )
 
 export const teamOrder: string[] = raw.teamOrder
+
+export const immunityWins: Record<string, number[]> = raw.immunityWins ?? {}
