@@ -184,4 +184,24 @@ export const timelineEpisodes: TimelineEpisode[] = [
       { name: 'Stephenie LaGrossa Kendrick', method: 'Voted Out', votes: '8-2' },
     ],
   },
+  {
+    episode: 11,
+    title: 'Everyone Will Be Shooketh!',
+    airDate: 'May 6, 2026',
+    days: '19–21',
+    label: 'Split Tribal',
+    events: [
+      'Floating A-frame balance immunity challenge with progressively narrower footholds',
+      'Jonathan wins individual immunity and earns a reward to attend BOTH tribal councils',
+      'Players split into two groups of four for separate tribal councils',
+      'Group 1 (Cirie, Emily, Rick, Tiffany): tied 2-2 between Emily and Cirie, forcing a revote',
+      "Cirie uses her extra vote in the revote; Emily falls 4-2",
+      'Group 2 (Aubry, Joe, Ozzy, Rizo + Jonathan): Rizo flips on Ozzy after learning about his alliance with Cirie',
+      'Ozzy is blindsided 4-1 with an idol still in his pocket',
+    ],
+    eliminated: [
+      { name: 'Emily Flippen', method: 'Voted Out', votes: '4-2' },
+      { name: 'Ozzy Lusth', method: 'Voted Out', votes: '4-1' },
+    ],
+  },
 ]
