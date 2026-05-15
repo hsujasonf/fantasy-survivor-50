@@ -205,4 +205,24 @@ export const timelineEpisodes: TimelineEpisode[] = [
       { name: 'Ozzy Lusth', method: 'Voted Out', votes: '4-1' },
     ],
   },
+  {
+    episode: 12,
+    title: 'Inconceivable',
+    airDate: 'May 13, 2026',
+    days: '21–23',
+    label: 'Double Boot',
+    events: [
+      'Rick searches for idols but comes up empty',
+      'First immunity challenge: wobbly table block-stacking spelling "immunity" — Joe wins immunity and reward',
+      'Rick plays Shot in the Dark (Not Safe) and is voted out unanimously 6-0',
+      'Second immunity challenge: teeter tunnel, disk maneuver, balance beam, arch puzzle spelling "Inconceivable"',
+      'Tiffany wins individual immunity despite multiple players conspiring against her',
+      "Cirie uses Rizo's information to paint Aubry as sneaky, swinging the vote",
+      'Cirie is blindsided 4-2 over Aubry',
+    ],
+    eliminated: [
+      { name: 'Rick Devens', method: 'Voted Out', votes: '6-0' },
+      { name: 'Cirie Fields', method: 'Voted Out', votes: '4-2' },
+    ],
+  },
 ]

@@ -3,27 +3,27 @@
     "Jenna Lewis-Dougherty": { "1": "Cirie" },
     "Colby Donaldson": { "6": "None" },
     "Stephenie LaGrossa Kendrick": { "3": "Angelina", "4": "Mike", "5": "Angelina", "6": "Kamilla", "7": "Tiffany", "8": "Coach & Chrissy", "9": "Rick", "10": "Rick" },
-    "Cirie Fields": { "1": "Jenna", "2": "Savannah", "5": "Charlie", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy", "9": "Christian", "10": "Stephenie", "11": "Emily" },
+    "Cirie Fields": { "1": "Jenna", "2": "Savannah", "5": "Charlie", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy", "9": "Christian", "10": "Stephenie", "11": "Emily", "12": "Rick" },
     "Ozzy Lusth": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Angelina", "5": "Angelina", "6": "Exiled", "7": "Tiffany", "8": "Coach & Chrissy", "9": "Christian", "10": "Stephenie", "11": "Rizo" },
     "Coach Wade": { "6": "Colby", "7": "Tiffany", "8": "None" },
-    "Aubry Bracco": { "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy", "9": "Ozzy", "10": "Stephenie", "11": "Ozzy" },
+    "Aubry Bracco": { "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy", "9": "Ozzy", "10": "Stephenie", "11": "Ozzy", "12": "Rick" },
     "Chrissy Hofbeck": { "6": "Kamilla", "7": "Dee", "8": "Emily & Rizo" },
     "Christian Hubicki": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy", "9": "Christian" },
     "Angelina Keeley": { "3": "Q", "4": "Emily", "5": "Stephenie" },
     "Mike White": { "3": "Q", "4": "Emily" },
-    "Rick Devens": { "1": "Jenna", "2": "Savannah", "5": "Rizo", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy", "9": "Ozzy", "10": "None", "11": "Cirie" },
-    "Jonathan Young": { "5": "Rizo", "6": "Kamilla", "7": "Dee", "8": "Aubry & Rick", "9": "Rick", "10": "Stephenie", "11": "Ozzy" },
+    "Rick Devens": { "1": "Jenna", "2": "Savannah", "5": "Rizo", "6": "Genevieve", "7": "Dee", "8": "Coach & Chrissy", "9": "Ozzy", "10": "None", "11": "Cirie", "12": "None" },
+    "Jonathan Young": { "5": "Rizo", "6": "Kamilla", "7": "Dee", "8": "Aubry & Rick", "9": "Rick", "10": "Stephenie", "11": "Ozzy", "12": "Rick" },
     "Emily Flippen": { "1": "Jenna", "2": "Savannah", "3": "Q", "4": "Mike", "5": "Angelina", "6": "Colby", "7": "Dee", "8": "Coach & Chrissy", "9": "Rick", "10": "Stephenie", "11": "Cirie" },
     "Dee Valladares": { "5": "Charlie", "6": "Colby", "7": "None" },
     "Quintavius \"Q\" Burdette": { "3": "None" },
     "Charlie Davis": { "5": "Rizo" },
-    "Tiffany Ervin": { "6": "Chrissy", "7": "Coach", "8": "Coach & Chrissy", "9": "Christian", "10": "Stephenie", "11": "Emily" },
+    "Tiffany Ervin": { "6": "Chrissy", "7": "Coach", "8": "Coach & Chrissy", "9": "Christian", "10": "Stephenie", "11": "Emily", "12": "Rick" },
     "Genevieve Mushaluk": { "6": "None" },
     "Kyle Fraser": {},
-    "Joe Hunter": { "1": "Jenna", "2": "Savannah", "6": "Genevieve", "7": "Tiffany", "8": "Coach & Chrissy", "9": "Christian", "10": "Stephenie", "11": "Ozzy" },
+    "Joe Hunter": { "1": "Jenna", "2": "Savannah", "6": "Genevieve", "7": "Tiffany", "8": "Coach & Chrissy", "9": "Christian", "10": "Stephenie", "11": "Ozzy", "12": "Rick" },
     "Kamilla Karthigesu": { "5": "Charlie", "6": "Chrissy" },
     "Savannah Louie": { "1": "Jenna", "2": "Ozzy" },
-    "Rizo Velovic": { "5": "Charlie", "6": "Exiled", "7": "Dee", "8": "Coach & Chrissy", "9": "Christian", "10": "Stephenie", "11": "Ozzy" }
+    "Rizo Velovic": { "5": "Charlie", "6": "Exiled", "7": "Dee", "8": "Coach & Chrissy", "9": "Christian", "10": "Stephenie", "11": "Ozzy", "12": "Rick" }
   },
   "votedOff": [
     "Jenna Lewis-Dougherty",
@@ -42,9 +42,11 @@
     "Christian Hubicki",
     "Stephenie LaGrossa Kendrick",
     "Emily Flippen",
-    "Ozzy Lusth"
+    "Ozzy Lusth",
+    "Rick Devens",
+    "Cirie Fields"
   ],
-  "trackedEpisodes": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+  "trackedEpisodes": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   "eliminatedByEpisode": {
     "Jenna Lewis-Dougherty": 1,
     "Kyle Fraser": 1,
@@ -62,7 +64,9 @@
     "Christian Hubicki": 9,
     "Stephenie LaGrossa Kendrick": 10,
     "Emily Flippen": 11,
-    "Ozzy Lusth": 11
+    "Ozzy Lusth": 11,
+    "Rick Devens": 12,
+    "Cirie Fields": 12
   },
   "episodeGroups": {
     "6": [
@@ -86,8 +90,8 @@
     "Christian Hubicki": [6],
     "Dee Valladares": [6],
     "Ozzy Lusth": [7],
-    "Joe Hunter": [8, 9],
-    "Tiffany Ervin": [8, 10],
+    "Joe Hunter": [8, 9, 12],
+    "Tiffany Ervin": [8, 10, 12],
     "Jonathan Young": [11]
   }
 }
